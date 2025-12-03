@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEVO | Mayorista de Gorras Streetwear</title>
+
+    <!-- Fuentes: Kanit (Urbana/Bold) y Inter (Lectura limpia) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;700&family=Kanit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+
+    <!-- Navegación Flotante -->
+    <header>
+        <div class="nav-dock">
+            <a href="#" class="logo">MEVO<span>STORE</span></a>
+            <nav class="nav-links" id="nav-menu">
+                <a href="#hero" class="nav-link">INICIO</a>
+                <a href="#catalogo" class="nav-link">CATÁLOGO</a>
+                <a href="#mayorista" class="nav-link">MAYORISTAS</a>
+                <a href="#contacto" class="nav-link btn-primary nav-cta">SER DISTRIBUIDOR</a>
+            </nav>
+            <div class="mobile-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <!-- Hero Asimétrico -->
+    <section class="hero container" id="hero">
+        <div class="hero-grid">
+            <div class="hero-text reveal">
+                <span class="badge">NUEVA COLECCIÓN 2024</span>
+                <h1 class="text-huge">ESTILO QUE<br><span class="text-outline">IMPONE</span><br><span
+                        class="text-accent">RESPETO</span></h1>
+                <p>Somos el proveedor definitivo de gorras en Paraguay. Diseños urbanos, calidad premium y stock
+                    garantizado para potenciar tu negocio.</p>
+
+                <div class="hero-buttons reveal">
+                    <a href="#catalogo" class="btn btn-primary">Ver Catálogo <i class="fas fa-arrow-right"
+                            style="margin-left: 10px;"></i></a>
+                    <a href="https://wa.me/5959XXXXXXXX" class="btn btn-dark"><i class="fab fa-whatsapp"
+                            style="margin-right: 10px;"></i> Contactar</a>
+                </div>
+
+                <div class="hero-stats reveal">
+                    <div class="stat">
+                        <strong>+5 AÑOS</strong>
+                        <span>Liderando</span>
+                    </div>
+                    <div class="stat">
+                        <strong>12K+</strong>
+                        <span>Vendidas</span>
+                    </div>
+                    <div class="stat">
+                        <strong>NACIONAL</strong>
+                        <span>Envíos</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <!-- Fallback image provided using onerror attribute -->
+                <img src="./assets/images/Mevo-Foto.svg"
+                    onerror="this.onerror=null;this.src='https://placehold.co/800x600/111/C5A059?text=STREET+CAP';"
+                    alt="Hombre con gorra estilo urbano" class="hero-img">
+
+                <div class="floating-card">
+                    <div class="play-btn"><i class="fas fa-play"></i></div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 0.9rem;">Campaña 2024</h4>
+                        <span style="font-size: 0.8rem; color: #aaa;">Ver video promocional</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee (Cinta Infinita) -->
+    <div class="marquee-container reveal">
+        <div class="marquee-content">
+            <span class="marquee-tag">★ ENVÍOS A TODO EL PAÍS</span>
+            <span class="marquee-tag">★ VENTA MAYORISTA Y MINORISTA</span>
+            <span class="marquee-tag">★ CALIDAD PREMIUM GARANTIZADA</span>
+            <span class="marquee-tag">★ DISEÑOS EXCLUSIVOS MEVO</span>
+            <span class="marquee-tag">★ ENVÍOS A TODO EL PAÍS</span>
+            <span class="marquee-tag">★ VENTA MAYORISTA Y MINORISTA</span>
+            <span class="marquee-tag">★ CALIDAD PREMIUM GARANTIZADA</span>
+        </div>
+    </div>
+
+    <!-- Catálogo -->
+    <section class="container catalog-section" id="catalogo">
+        <div class="catalog-header reveal">
+            <div>
+                <h2 class="text-xl">NUESTROS <span class="text-accent">DROPS</span></h2>
+                <p style="color: #777;">Selecciona tu estilo favorito.</p>
+            </div>
+
+            <div class="filter-pill-container">
+                <button class="filter-pill active" onclick="filter('all', this)">Todo</button>
+                <button class="filter-pill" onclick="filter('trucker', this)">Trucker</button>
+                <button class="filter-pill" onclick="filter('snapback', this)">Snapback</button>
+                <button class="filter-pill" onclick="filter('dad', this)">Dad Hat</button>
+            </div>
+        </div>
+
+        <div class="products-grid" id="grid">
+            <!-- Producto 1: Snapback -->
+            <div class="product-card reveal" data-cat="snapback">
+                <div class="p-image-box">
+                    <span class="p-tag">BEST SELLER</span>
+                    <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=600&auto=format&fit=crop"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x600/222/FFF?text=SNAPBACK';"
+                        alt="Gorra Negra">
+                </div>
+                <div class="p-info">
+                    <h3>BLACK OPS EDITION</h3>
+                    <span class="price">₲ 120.000</span>
+                    <div class="p-actions">
+                        <button class="btn-cart">COMPRAR AHORA</button>
+                        <button class="btn-icon"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2: Trucker -->
+            <div class="product-card reveal" data-cat="trucker">
+                <div class="p-image-box">
+                    <span class="p-tag" style="background: var(--accent); color: black;">NUEVO</span>
+                    <img src="https://images.unsplash.com/photo-1521369909029-2afed882baee?q=80&w=600&auto=format&fit=crop"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x600/333/FFF?text=TRUCKER+MESH';"
+                        alt="Gorra Trucker">
+                </div>
+                <div class="p-info">
+                    <h3>DESERT GOLD TRUCKER</h3>
+                    <span class="price">₲ 110.000</span>
+                    <div class="p-actions">
+                        <button class="btn-cart">COMPRAR AHORA</button>
+                        <button class="btn-icon"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3: Dad Hat -->
+            <div class="product-card reveal" data-cat="dad">
+                <div class="p-image-box">
+                    <img src="https://images.unsplash.com/photo-1534215754734-18e55d13e346?q=80&w=600&auto=format&fit=crop"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x600/111/FFF?text=DAD+HAT+STYLE';"
+                        alt="Gorra Beige">
+                </div>
+                <div class="p-info">
+                    <h3>URBAN BEIGE CLASSIC</h3>
+                    <span class="price">₲ 115.000</span>
+                    <div class="p-actions">
+                        <button class="btn-cart">COMPRAR AHORA</button>
+                        <button class="btn-icon"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4: Snapback -->
+            <div class="product-card reveal" data-cat="snapback">
+                <div class="p-image-box">
+                    <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?q=80&w=600&auto=format&fit=crop"
+                        onerror="this.onerror=null;this.src='https://placehold.co/600x600/0A0A0A/C5A059?text=SNAPBACK+LOGO';"
+                        alt="Gorra Azul">
+                </div>
+                <div class="p-info">
+                    <h3>MIDNIGHT BLUE SNAP</h3>
+                    <span class="price">₲ 130.000</span>
+                    <div class="p-actions">
+                        <button class="btn-cart">COMPRAR AHORA</button>
+                        <button class="btn-icon"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Grid (Mayoristas) -->
+    <section class="container bento-section" id="mayorista">
+        <h2 class="text-xl reveal" style="text-align: center; margin-bottom: 40px;">¿POR QUÉ ELEGIR <span
+                class="text-accent">MEVO</span>?</h2>
+
+        <div class="bento-grid">
+            <!-- Caja Grande: STOCK MASIVO -->
+            <div class="bento-box box-large reveal">
+                <div>
+                    <div class="bento-icon"><i class="fas fa-boxes"></i></div>
+                    <h3>STOCK MASIVO</h3>
+                    <p style="color: #999; margin-top: 10px; line-height: 1.5;">
+                        Manejamos el inventario más grande del país. Nunca te quedarás sin productos para vender.
+                        Reposición inmediata garantizada para todos nuestros socios comerciales.
+                    </p>
+                </div>
+                <div class="bar-chart-mock"></div>
+            </div>
+
+            <!-- Caja Normal 1: ALTA RENTABILIDAD (Solución Responsiva) -->
+            <div class="bento-box reveal">
+                <div class="bento-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>ALTA RENTABILIDAD</h3>
+                <p style="color: #888; font-size: 0.9rem;">Márgenes de ganancia optimizados para revendedores y sistema
+                    de descuento por volumen.</p>
+            </div>
+
+            <!-- Caja Normal 2: ENVÍO FLASH (Solución Responsiva) -->
+            <div class="bento-box reveal">
+                <div class="bento-icon"><i class="fas fa-shipping-fast"></i></div>
+                <h3>ENVÍO FLASH</h3>
+                <p style="color: #888; font-size: 0.9rem;">Entrega garantizada en 24hs a Asunción y Gran Asunción.
+                    Despachos diarios al interior.</p>
+            </div>
+
+            <!-- Caja Ancha: SOPORTE DEDICADO -->
+            <div class="bento-box box-wide reveal">
+                <div class="bento-icon"><i class="fas fa-handshake"></i></div>
+                <div>
+                    <h3>SOPORTE DEDICADO</h3>
+                    <p style="color: #888;">Asesoramiento personalizado para armar tu primer pedido inteligente.</p>
+                </div>
+                <a href="https://wa.me/5959XXXXXXXX" class="btn btn-primary btn-consult">HABLAR CON ASESOR</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Grande con Formulario de Contacto Completo -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-cta reveal">
+                <h2>¿LISTO PARA SUBIR DE NIVEL?</h2>
+                <p style="color: #999; margin-bottom: 25px;">Contáctanos para ser distribuidor o para cualquier consulta
+                    sobre nuestro stock.</p>
+
+                <!-- Formulario Completo Solicitado -->
+                <form class="footer-form">
+                    <input type="text" placeholder="Tu Nombre Completo" class="footer-input" required>
+                    <input type="email" placeholder="Tu Email" class="footer-input" required>
+
+                    <input type="tel" placeholder="Número de Contacto" class="footer-input">
+                    <input type="text" placeholder="Ciudad / País" class="footer-input">
+
+                    <textarea placeholder="Algo que quieras agregar..." class="footer-textarea"></textarea>
+                    <button type="submit" class="btn btn-primary footer-submit-btn">ENVIAR MENSAJE</button>
+                </form>
+            </div>
+
+            <div class="footer-cols reveal">
+                <div class="col-brand">
+                    <a href="#" class="logo"
+                        style="font-size: 1.5rem; display: block; margin-bottom: 15px;">MEVO<span>STORE</span></a>
+                    <p>Distribuidora oficial de estilo urbano.<br>Asunción, Paraguay.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>NAVEGACIÓN</h4>
+                    <ul>
+                        <li><a href="#hero">Inicio</a></li>
+                        <li><a href="#catalogo">Catálogo</a></li>
+                        <li><a href="#mayorista">Mayoristas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>LEGAL</h4>
+                    <ul>
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>CONTACTO</h4>
+                    <ul>
+                        <li><i class="fab fa-whatsapp"></i> +595 9XX XXX</li>
+                        <li><i class="far fa-envelope"></i> hola@mevostore.py</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright-text reveal">
+                &copy; 2024 Mevo Store Paraguay. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
